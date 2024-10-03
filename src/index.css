@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,141 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Use a modern sans-serif font */
+  background-color: #0A2463; /* Primary background color */
+  color: white; /* Default text color */
+}
+
+/* Header Styles */
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 36, 99, 0.8); /* Transparent background for a modern look */
+}
+
+header img {
+  height: 4rem; /* Logo size */
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem; /* Space between nav items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3E92CC; /* Hover effect */
+}
+
+/* Main Content Styles */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section Styles */
+section.text-center {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 3rem; /* Heading size */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+button {
+  background-color: #3E92CC;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2A628F; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Service Cards Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem; /* Space between cards */
+}
+
+.grid div {
+  background-color: #1E1B18;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Modern shadow effect */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1E1B18;
+  padding: 2rem 0;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .flex {
+  display: flex;
+  justify-content: space-between; /* Space between contact details */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Full-width button on smaller screens */
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+  }
 }
